@@ -1,0 +1,16 @@
+Q1.2] Answer this: 
+
+1) Why must initialization happen before assignment? 
+ANS: 
+Initialization must happen before assignment because a variable or object must be created and given an initial value before it can be used or modified.
+    - Initialization: Giving a value to a variable at the time of its creation.
+    - Assignment: Giving or changing a value after the variable has already been created.
+If a variable is not initialized first, it may contain a garbage (undefined) value, which can cause incorrect program behavior.
+
+2) When is initialization preferred over assignment? 
+ANS: 
+Initialization is preferred over assignment in the following situations:
+1. When creating objects - Using constructors ensures that objects start with valid values.
+2. For constant variables - const variables must be initialized at declaration because their values cannot be changed later.
+3. For reference variables - References must be initialized when declared.
+4. For better performance - Initialization directly sets the value, while assignment may first create the object and then change its value, which can be less efficient.
