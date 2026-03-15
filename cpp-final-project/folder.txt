@@ -1,24 +1,30 @@
-LibraryManagementSystem
+cpp-final-project/
 │
-├── headers
-│   ├── Person.h
-│   ├── Member.h
-│   ├── Librarian.h
-│   ├── Book.h
-│   ├── Container.h
-│   ├── Transaction.h
-│   ├── Library.h
-│   └── Exceptions.h
-│
-├── src
-│   ├── Member.cpp
-│   ├── Librarian.cpp
-│   ├── Book.cpp
-│   ├── Transaction.cpp
-│   ├── Library.cpp
-│
-├── data
+├── data/
 │   ├── books.txt
 │   ├── members.txt
+│   └── transactions.txt
 │
-└── main.cpp
+├── headers/
+│   ├── Book.h
+│   ├── Container.h
+│   ├── Exceptions.h
+│   ├── Librarian.h
+│   ├── Library.h
+│   ├── Member.h
+│   ├── Person.h
+│   └── Transaction.h
+│
+├── src/
+│   ├── Book.cpp
+│   ├── Librarian.cpp
+│   ├── Library.cpp
+│   ├── Member.cpp
+│   └── Transaction.cpp
+│
+├── command.txt
+├── folder.txt
+├── LibrarySystem.exe
+├── main.cpp
+├── output.txt
+├── Project_Assignment_Final.pdf
