@@ -1,0 +1,24 @@
+LibraryManagementSystem
+│
+├── headers
+│   ├── Person.h
+│   ├── Member.h
+│   ├── Librarian.h
+│   ├── Book.h
+│   ├── Container.h
+│   ├── Transaction.h
+│   ├── Library.h
+│   └── Exceptions.h
+│
+├── src
+│   ├── Member.cpp
+│   ├── Librarian.cpp
+│   ├── Book.cpp
+│   ├── Transaction.cpp
+│   ├── Library.cpp
+│
+├── data
+│   ├── books.txt
+│   ├── members.txt
+│
+└── main.cpp
