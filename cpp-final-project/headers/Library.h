@@ -1,33 +1,58 @@
-// manger class of system
-
 #ifndef LIBRARY_H
 #define LIBRARY_H
 
 #include "Book.h"
 #include "Member.h"
+#include "Librarian.h"
 #include "Container.h"
+#include "Transaction.h"
+#include "Exceptions.h"
 #include <vector>
+#include <map>
+#include <string>
 
 namespace LibrarySystem {
 
-class Library {
+    class Library {
+    private:
+        Container<Book> books;
+        Container<Member> members;
+        std::vector<Transaction> transactions;
+        std::map<int, int> bookToMember;  // bookId -> memberId mapping
 
-private:
+        std::string dataPath; // Path to data directory
 
-    Container<Book> books;
-    Container<Member> members;
+    public:
+        Library(const std::string& dataPath = "data");
+        ~Library();
 
-public:
+        // Book management
+        void addBook();
+        void removeBook();
+        void searchBook();
+        void displayAllBooks() const;
 
-    void addBook(Book b);
-    void registerMember(Member m);
+        // Member management
+        void registerMember();
+        void removeMember();
+        void searchMember();
+        void displayAllMembers() const;
 
-    void displayBooks();
-    void displayMembers();
-};
+        // Issue / Return
+        void issueBook();
+        void returnBook();
 
-}
+        // Overdue
+        void viewOverdueBooks() const;
 
-#endif
+        // File I/O
+        void saveData() const;
+        void loadData();
 
-// controls books, members, transactions
+        // Polymorphism demonstration
+        void demonstratePolymorphism() const;
+    };
+
+} // namespace LibrarySystem
+
+#endif // LIBRARY_H
