@@ -1,0 +1,630 @@
+PS C:\PGCP_AC\C++\cpp-assignments-repo\cpp-final-project> git branch
+* C++
+  DBT
+  main
+PS C:\PGCP_AC\C++\cpp-assignments-repo\cpp-final-project> g++ -std=c++17 -Wall -Wextra -o LibrarySystem.exe main.cpp src/Member.cpp src/Librarian.cpp src/Book.cpp src/Transaction.cpp src/Library.cpp -I headers
+>> .\LibrarySystem.exe
+
+========== Runtime Polymorphism Demonstration ==========
+Creating Person* pointers to Member and Librarian objects...
+
+Calling displayInfo() through Person* pointer:
+  p1 (Member):      [Member] ID: 999 | Name: Demo Member | Phone: 1234567890 | Books Issued: 0
+  p2 (Librarian):   [Librarian] ID: 998 | Name: Demo Librarian | Phone: 0987654321 | Department: Science Dept
+
+  >> Late binding confirmed: correct derived versions executed!
+
+ΓòöΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòù
+Γòæ     LIBRARY MANAGEMENT SYSTEM            Γòæ
+ΓòáΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòú
+Γòæ  1.  Add New Book                        Γòæ
+Γòæ  2.  Remove Book                         Γòæ
+Γòæ  3.  Search Book                         Γòæ
+Γòæ  4.  Display All Books                   Γòæ
+Γòæ  5.  Register Member                     Γòæ
+Γòæ  6.  Remove Member                       Γòæ
+Γòæ  7.  Search Member                       Γòæ
+Γòæ  8.  Display All Members                 Γòæ
+Γòæ  9.  Issue Book                          Γòæ
+Γòæ  10. Return Book                         Γòæ
+Γòæ  11. View Overdue Books                  Γòæ
+Γòæ  12. Save Data                           Γòæ
+Γòæ  13. Load Data                           Γòæ
+Γòæ  0.  Exit                                Γòæ
+ΓòÜΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓò¥
+Enter your choice: 3
+Search by:
+  1. Title
+  2. Author
+  3. ISBN
+  4. Book ID
+Choice: 4
+Enter Book ID: 101
+
+  [Book Error] Error: No books matching your query were found | Function: searchBook | Line: 92
+
+ΓòöΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòù
+Γòæ     LIBRARY MANAGEMENT SYSTEM            Γòæ
+ΓòáΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòú
+Γòæ  1.  Add New Book                        Γòæ
+Γòæ  2.  Remove Book                         Γòæ
+Γòæ  3.  Search Book                         Γòæ
+Γòæ  4.  Display All Books                   Γòæ
+Γòæ  5.  Register Member                     Γòæ
+Γòæ  6.  Remove Member                       Γòæ
+Γòæ  7.  Search Member                       Γòæ
+Γòæ  8.  Display All Members                 Γòæ
+Γòæ  9.  Issue Book                          Γòæ
+Γòæ  10. Return Book                         Γòæ
+Γòæ  11. View Overdue Books                  Γòæ
+Γòæ  12. Save Data                           Γòæ
+Γòæ  13. Load Data                           Γòæ
+Γòæ  0.  Exit                                Γòæ
+ΓòÜΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓò¥
+Enter your choice:
+PS C:\PGCP_AC\C++\cpp-assignments-repo\cpp-final-project> g++ -std=c++17 -Wall -Wextra -o LibrarySystem.exe main.cpp src/Member.cpp src/Librarian.cpp src/Book.cpp src/Transaction.cpp src/Library.cpp -I headers
+PS C:\PGCP_AC\C++\cpp-assignments-repo\cpp-final-project> .\LibrarySystem.exe                 
+                                                                                              
+========== Runtime Polymorphism Demonstration ==========
+Creating Person* pointers to Member and Librarian objects...
+
+Calling displayInfo() through Person* pointer:
+  p1 (Member):      [Member] ID: 999 | Name: Demo Member | Phone: 1234567890 | Books Issued: 0
+  p2 (Librarian):   [Librarian] ID: 998 | Name: Demo Librarian | Phone: 0987654321 | Department: Science Dept
+
+  >> Late binding confirmed: correct derived versions executed!
+
+ΓòöΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòù
+Γòæ     LIBRARY MANAGEMENT SYSTEM            Γòæ
+ΓòáΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòú
+Γòæ  1.  Add New Book                        Γòæ
+Γòæ  2.  Remove Book                         Γòæ
+Γòæ  3.  Search Book                         Γòæ
+Γòæ  4.  Display All Books                   Γòæ
+Γòæ  5.  Register Member                     Γòæ
+Γòæ  6.  Remove Member                       Γòæ
+Γòæ  7.  Search Member                       Γòæ
+Γòæ  8.  Display All Members                 Γòæ
+Γòæ  9.  Issue Book                          Γòæ
+Γòæ  10. Return Book                         Γòæ
+Γòæ  11. View Overdue Books                  Γòæ
+Γòæ  12. Save Data                           Γòæ
+Γòæ  13. Load Data                           Γòæ
+Γòæ  0.  Exit                                Γòæ
+ΓòÜΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓò¥
+Enter your choice:
+PS C:\PGCP_AC\C++\cpp-assignments-repo\cpp-final-project> g++ -std=c++17 -Wall -Wextra -o LibrarySystem.exe main.cpp src/Member.cpp src/Librarian.cpp src/Book.cpp src/Transaction.cpp src/Library.cpp -I headers
+>> .\LibrarySystem.exe
+   
+========== Runtime Polymorphism Demonstration ==========
+Creating Person* pointers to Member and Librarian objects...
+
+Calling displayInfo() through Person* pointer:
+  p1 (Member):      [Member] ID: 999 | Name: Demo Member | Phone: 1234567890 | Books Issued: 0
+  p2 (Librarian):   [Librarian] ID: 998 | Name: Demo Librarian | Phone: 0987654321 | Department: Science Dept
+
+  >> Late binding confirmed: correct derived versions executed!
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 4
+
+========== ALL BOOKS (0) ==========
+  (No items to display)
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 5
+Enter Member ID: 131
+Enter Name: Rajdeep Girkar
+Enter Phone: 998877665 
+
+  >> Member registered successfully!
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 8
+
+========== ALL MEMBERS (1) ==========
+  [Member] ID: 131 | Name: Rajdeep Girkar | Phone: 998877665 | Books Issued: 0
+------------------------------
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 11
+
+========== OVERDUE BOOKS ==========
+  (No overdue books)
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 1
+Enter Book ID: 101
+Enter Title: C++ Programing
+Enter Author: Bjarne Stroustrup
+Enter ISBN: 9 
+Enter Genre (Fiction/NonFiction/Science/History/Technology/Other): Technology
+Enter Quantity: 10
+
+  >> Book added successfully!
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 3
+Search by:
+  1. Title
+  2. Author
+  3. ISBN
+  4. Book ID
+Choice: 4
+Enter Book ID: 101
+
+--- Search Result ---
+  Book ID: 101 | Title: C++ Programing | Author: Bjarne Stroustrup | ISBN: 9 | Genre: Technology | Status: Available | Qty: 10 | Available: 10
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 9
+Enter Book ID to issue: 101
+Enter Member ID: 131
+
+  >> Book issued successfully!
+  Issue Date: 2026-03-15 | Due Date: 2026-03-29
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 11
+
+========== OVERDUE BOOKS ==========
+  (No overdue books)
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 4
+
+========== ALL BOOKS (1) ==========
+  Book ID: 101 | Title: C++ Programing | Author: Bjarne Stroustrup | ISBN: 9 | Genre: Technology | Status: Available | Qty: 10 | Available: 9
+------------------------------
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 8
+
+========== ALL MEMBERS (1) ==========
+  [Member] ID: 131 | Name: Rajdeep Girkar | Phone: 998877665 | Books Issued: 1
+    Issued Book IDs: 101
+------------------------------
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 7
+Search by:
+  1. Name
+  2. Member ID
+Choice: 2
+Enter Member ID: 131
+
+--- Search Result ---
+  [Member] ID: 131 | Name: Rajdeep Girkar | Phone: 998877665 | Books Issued: 1
+    Issued Book IDs: 101
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 11
+
+========== OVERDUE BOOKS ==========
+  (No overdue books)
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 10
+Enter Book ID to return: 101
+Enter Member ID: 131
+
+  >> Book returned successfully!
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 11
+
+========== OVERDUE BOOKS ==========
+  (No overdue books)
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 4
+
+========== ALL BOOKS (1) ==========
+  Book ID: 101 | Title: C++ Programing | Author: Bjarne Stroustrup | ISBN: 9 | Genre: Technology | Status: Available | Qty: 10 | Available: 10
+------------------------------
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 12
+
+  >> All data saved successfully!
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 13
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 13
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 13
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 13
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 13
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 13
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 13
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 13
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 13
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+
+  >> Data loaded successfully! (2 books, 2 members, 2 transactions)
+
++--------------------------------------------+
+|     LIBRARY MANAGEMENT SYSTEM              |
++--------------------------------------------+
+|  1.  Add New Book                          |
+|  2.  Remove Book                           |
+|  3.  Search Book                           |
+|  4.  Display All Books                     |
+|  5.  Register Member                       |
+|  6.  Remove Member                         |
+|  7.  Search Member                         |
+|  8.  Display All Members                   |
+|  9.  Issue Book                            |
+|  10. Return Book                           |
+|  11. View Overdue Books                    |
+|  12. Save Data                             |
+|  13. Load Data                             |
+|  0.  Exit                                  |
++--------------------------------------------+
+Enter your choice: 0  
+
+  Saving data before exit...
+
+  >> All data saved successfully!
+
+  Thank you for using the Library Management System!
+  Goodbye!
+
+PS C:\PGCP_AC\C++\cpp-assignments-repo\cpp-final-project>   
