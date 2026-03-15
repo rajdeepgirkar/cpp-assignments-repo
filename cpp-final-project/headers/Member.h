@@ -1,39 +1,52 @@
-// Derived from Person.h
-
 #ifndef MEMBER_H
 #define MEMBER_H
 
 #include "Person.h"
+#include <string>
 #include <iostream>
 
 namespace LibrarySystem {
 
-class Member : public Person {
+    class Member : public Person {
+    private:
+        int numBooksIssued;
+        int* issuedBookIds;  // Dynamic array of issued book IDs
+        int capacity;        // Capacity of the dynamic array
 
-private:
-    int booksIssued;
-    int* issuedBooks;
+    public:
+        // Constructors
+        Member();
+        Member(int id, const std::string& name, const std::string& phone);
 
-public:
+        // Copy constructor (deep copy)
+        Member(const Member& other);
 
-    Member();
-    Member(int id, std::string name, std::string phone);
-    Member(const Member& other);
-    ~Member();
+        // Destructor
+        ~Member();
 
-    Member& operator=(const Member& other);
-    bool operator==(const Member& other);
+        // Assignment operator (deep copy)
+        Member& operator=(const Member& other);
 
-    void displayInfo() const override;
+        // Override displayInfo from Person (runtime polymorphism)
+        void displayInfo() const override;
 
-    friend std::ostream& operator<<(std::ostream&, const Member&);
-    friend std::istream& operator>>(std::istream&, Member&);
-};
+        // Book management
+        void issueBook(int bookId);
+        void returnBook(int bookId);
+        bool hasBook(int bookId) const;
 
-}
+        // Getters
+        int getNumBooksIssued() const;
+        const int* getIssuedBookIds() const;
 
-#endif
+        // Comparison operator
+        bool operator==(const Member& other) const;
 
-/*
-library member who borrows book
-*/
+        // Stream operators
+        friend std::ostream& operator<<(std::ostream& os, const Member& m);
+        friend std::istream& operator>>(std::istream& is, Member& m);
+    };
+
+} // namespace LibrarySystem
+
+#endif // MEMBER_H
