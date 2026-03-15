@@ -1,0 +1,9 @@
+Run in terminal
+
+1) g++ -std=c++17 -Wall -Wextra -o LibrarySystem.exe main.cpp src/Member.cpp src/Librarian.cpp src/Book.cpp src/Transaction.cpp src/Library.cpp -I headers
+
+OR
+
+1) g++ -std=c++17 -Wall -Wextra src/*.cpp main.cpp -I headers -o LibrarySystem.exe
+
+2) .\LibrarySystem.exe
