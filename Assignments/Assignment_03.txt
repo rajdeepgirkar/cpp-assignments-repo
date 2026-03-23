@@ -1,0 +1,18 @@
+Assignment – 3 
+
+Overview of SQL.
+
+1) Does ANSI recognize the data type DATE?
+ANS: Yes, the American National Standards Institute (ANSI) SQL standard does recognize the DATE data type.
+DATE is used to store calendar dates (year, month, day).
+Example: DATE '2026-03-16'
+
+2) Which subdivision of SQL is used to insert values in tables?
+ANS: The subdivision used to insert values is Data Manipulation Language (DML).
+DML is used to manipulate data inside tables.
+
+Common DML commands:
+    - INSERT
+    - UPDATE
+    - DELETE
+    - SELECT
