@@ -10,14 +10,14 @@ public class Q1_primitive_dt{
         short s = 200;
         byte b = 10;
         
-        System.out.println("Int = " + i);
-        System.out.println("Float = " + f);
-        System.out.println("Double = " + d);
-        System.out.println("Char = " + c);
-        System.out.println("Boolean = " + bool);
-        System.out.println("Long = " + l);
-        System.out.println("Short = " + s);
-        System.out.println("Byte = " + b);
+        System.out.println("int i = " + i);
+        System.out.println("float f = " + f);
+        System.out.println("double d = " + d);
+        System.out.println("char c = " + c);
+        System.out.println("boolean bool = " + bool);
+        System.out.println("long l = " + l);
+        System.out.println("short s = " + s);
+        System.out.println("byte b = " + b);
 
     }
 }
