@@ -18,23 +18,23 @@ public class Q9_calculator {
         switch (op) {
             case '+':
                 result = n1 + n2;
-                System.out.println("Result: " + result);
+                System.out.println("Result = " + result);
                 break;
 
             case '-':
                 result = n1 - n2;
-                System.out.println("Result: " + result);
+                System.out.println("Result = " + result);
                 break;
 
             case '*':
                 result = n1 * n2;
-                System.out.println("Result: " + result);
+                System.out.println("Result = " + result);
                 break;
 
             case '/':
                 if (n2 != 0) {
                     result = n1 / n2;
-                    System.out.println("Result: " + result);
+                    System.out.println("Result = " + result);
                 } else {
                     System.out.println("zero is not divisible");
                 }
@@ -45,5 +45,6 @@ public class Q9_calculator {
         }
 
         sc.close();
+        
     }
 }
