@@ -16,7 +16,7 @@ public class Q34_prime_no {
                 }
             }
 
-            if (prime == true) {
+            if (prime) {
                 System.out.println(num);
             }
         }
